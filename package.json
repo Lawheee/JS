@@ -2,7 +2,7 @@
     "name": "themen_01",
     "version": "1.0.0",
     "description": "## Setup Programmierumgebung",
-    "main": "JS/Klausur.js",
+    "main": "C:\\Users\\Lavinia\\Desktop\\JS\\Klausur.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
