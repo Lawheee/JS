@@ -77,3 +77,116 @@ in die JS-Console ausgegeben. Verwenden Sie für die Funktionalität der Summen-
 Produktbildung 2 Unterfunktionen summe() und produkt().
 Geben Sie auch zwei Funktionscalls an!
  */
+
+function rechner(zahl1, zahl2, operator){
+    let ergebnis;
+
+    if (operator === "summe") {
+        ergebnis = summe(zahl1, zahl2);   
+    }
+
+    else if (operator === "produkt"){
+        ergebnis = produkt (zahl1, zahl2);   
+    }
+
+    else {
+        console.log("ungültige Eingabe!");
+        return 
+    }
+
+    console.log("Das Ergebnis lautet: " + ergebnis);
+}
+    function summe (a, b){
+        return a + b;
+        }
+
+    function produkt (a, b){
+        return a * b;
+        }
+    
+rechner(2,3, "summe");
+rechner(2,3, "produkt");
+
+/*Zuerst wird die funktion rechner angelegt und die Operatoren definiert
+dabei legen wir mit der If-Funktion einmal den Operator Summe fest und dass zwei Parameter (Zahl1, Zahl2) übergeben werden sollen
+Dann legen wir mit der else if-Funktion einen alternativen Pfad fest und definieren den Operator Summe auf gleiche weise
+Hierbei handelt es sich um eine Verschachtelung, das bedeutet die Variablen sind nur innerhalb der Funktion definiert
+Somit können wir die Variablen später mit a und b benennen
+Wichtig: === vergleichen auch den Datentyp und übernehmen diesen 
+Als Ausweichfunktion legen wir dann noch über die else-Funktion die Ausgabe "ungültige Eingabe!" fest, falls die übergebenen
+Variablen nicht dem Datentyp entsprechen sollten
+Zuletzt legen wir noch die Ausgabe des Ergebnisses innerhalb der Funktion fest 
+Die Funktion endet hier.
+
+Wir legen nun die Funktion fest indem wir dem Operator (summe oder produkt) zwei Variablen (a, b)*/
+
+//-----------------------------------------------------------------------
+
+/*Aufgabe 5
+Sie sehen folgenden Stub-Code einer Java-Klasse:
+public class Test extends SuperClass1, SuperClass2 { ….. }
+Der Code kompiliert nicht. Warum?
+
+Hier werden zwei Superklassen angelegt, es ist aber nur eine möglich (keine Mehrfachvererbung),
+da Vererbung nur seriell möglich ist 
+Eine Subklasse kann nur von einer Superklasse erben */
+
+//-----------------------------------------------------------------------
+
+/*Aufgabe 6
+Aus einer Methode in einer Klasseninstanz geben Sie die Variable this aus.
+Was beinhaltet diese Variable? In welcher anderen Variable finden Sie diesen Wert
+ebenfalls? 
+
+this beninhaltet die RAM adresse
+Der Wert ist auch in der Instanzvariable zu finden 
+WICHTIG: Instanzvariablen oder auch Klassenglobale Variablen sind variablen die in der ganzen Klasse zugänglich sind. 
+Sie unterscheiden sich von Variablen die in Methoden definiert sind durch ihre Gültigkeit und Sichtbarkeit.
+
+*/
+//-----------------------------------------------------------------------
+/*Aufgabe 7
+ In einer Klasse ist eine Instanzvariable wie folgt deklariert: private String item;
+Geben Sie zwei geeignete Methoden an, durch die der Inhalt der Variable von außerhalb
+der Klasse gelesen bzw. geändert werden kann.*/
+
+//!Der Code ist in Java geschrieben und kann hier nicht verwendet werden!
+
+/* Getter-Methode: Diese Methode erlaubt das Lesen des Werts der Instanzvariablen
+
+public String getItem(){ 
+
+    return Item;
+    
+    }
+    Setter-Methode: Diese Methode erlaubt das Ändern des Werts der Instanzvariablen.
+
+    public void setItem(String newItem){ 
+    
+    this.Item = newItem;
+    
+    } */
+
+
+//-----------------------------------------------------------------------
+/*Aufgabe 8
+
+- appStatus: boolean
++ inputField1: String
++ inputField2: String
+# itemCount1: int
+# itemCount2: int
+
+Deklarieren Sie die in o.g. Klassendiagramm angegebenen Attribute - beachten Sie dabei
+den Datentyp & die Sichtbarkeit der jeweiligen Instanzvariablen.
+
+Private Instanzvariablen(private -)
+private boolean appStatus;
+
+Öffentliche Instanzvariablen(public +)
+public String inputField1;
+public String inputField2;
+
+Geschützte Instanzvariablen (protected #)
+protected int itemCount1;
+protected int itemCount2;*/
